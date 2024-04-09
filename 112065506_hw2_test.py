@@ -38,7 +38,7 @@ class Agent:
         # Create an instance of the model
         self.Q = model(self.obs_dim, self.action_dim)
         # Path to the model file
-        self.model_path = "C:/Users/joehu/Desktop/RL_HW2/now/models/model_3088.00.pth" # 1646.12
+        self.model_path = "112065506_hw2_data"
 
         # Load the model
         self.Q.load_state_dict(torch.load(self.model_path, map_location=torch.device('cpu')))
